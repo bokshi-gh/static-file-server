@@ -1,0 +1,28 @@
+# Binaries
+/bin/
+/release/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+
+# Build output
+*.out
+*.o
+
+# Go module files (optional, only ignore vendor if used)
+vendor/
+
+# IDE/editor files
+*.swp
+*.swo
+*.idea/
+*.vscode/
+*.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
