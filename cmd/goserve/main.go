@@ -12,10 +12,25 @@ import (
     "strings"
 )
 
+const version = "1.0.0"
+
 func main() {
     rootPath := flag.String("root", ".", "Root directory to serve files from")
     port := flag.Int("port", 8000, "Port to run the server on")
+    showVersion := flag.Bool("version", false, "Show version and exit")
+
+    flag.Usage = func() {
+        fmt.Fprintf(flag.CommandLine.Output(), "Usage: %s [options]\n", os.Args[0])
+        fmt.Println("Options:")
+        flag.PrintDefaults()
+    }
+
     flag.Parse()
+
+    if *showVersion {
+        fmt.Println("GoServe version", version)
+        return
+    }
 
     absRoot, err := filepath.Abs(*rootPath)
     if err != nil {
@@ -34,7 +49,7 @@ func main() {
     }
     defer ln.Close()
 
-    fmt.Println("Static File Server listening on", addr)
+    fmt.Println("GoServe version", version, "listening on", addr)
 
     for {
         conn, err := ln.Accept()
