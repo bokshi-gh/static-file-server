@@ -35,8 +35,8 @@ This project supports the following platforms:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/{{your-username}}/goserve.git
-    cd goserve
+    git clone https://github.com/bokshi-gh/static-file-server.git
+    cd static-file-server
     ```
 
 2. **Build the project:**
@@ -73,4 +73,5 @@ Contributions are welcome! Please fork the repo, make changes, and submit pull r
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
