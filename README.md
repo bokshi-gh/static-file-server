@@ -15,7 +15,6 @@ GoServe is a simple TCP-based static file server written in Go. It allows you to
 ## Tools and Technology used
 
 - [Go](https://golang.org/) (Golang programming language)
-- Standard Go packages: `net`, `os`, `path/filepath`, `bufio`, `mime`
 
 ## Getting Started
 
@@ -74,3 +73,4 @@ Contributions are welcome! Please fork the repo, make changes, and submit pull r
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
